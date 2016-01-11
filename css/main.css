@@ -284,6 +284,10 @@ nav li:first-child a {
     font-size: .9em;
 }
 
+footer .social {
+    padding: 0;
+}
+
 /* ==============
     MOBILE: Designer Collections
    ============== */
