@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link href='https://fonts.googleapis.com/css?family=Asul:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Crimson+Text:600italic,400italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -24,7 +26,7 @@
         <![endif]-->
 
         <!-- *********** Uncomment this header for working links *********** -->
-        <!-- <div class="header-container">
+        <div class="header-container">
             <header class="clearfix">
                 <div id="header-logo-container">
                     <a href="index.html">
@@ -33,16 +35,18 @@
                 </div>
                 <nav class="clearfix">
                     <a href="pages/about.html">ABOUT</a>
-                    <a href="pages/designerCollections.html">DESIGNER COLLECTIONS</a>
-                    <a href="pages/gallerySeries.html">GALLERY SERIES</a>
-                    <a href="pages/customInstallations.html">CUSTOM INSTALLATIONS</a>
+                    <a href="pages/designerCollections.html"><span>DESIGNER</span> <span>COLLECTIONS</span></a>
+                    <a href="pages/gallerySeries.html"><span>GALLERY</span> <span>SERIES</span></a>
+                    <a href="pages/customInstallations.html"><span>CUSTOM</span> <span>INSTALLATIONS</span></a>
                     <a href="pages/contact.html">CONTACT</a>
                     <a id="header-shop-button" href="#">SHOP</a>
                 </nav>
             </header>
-        </div> -->
+        </div>
 
-        <div class="header-container">
+
+        <!-- Header without all links for early deployment -->
+        <!-- <div class="header-container">
             <header class="clearfix">
                 <div id="header-logo-container">
                     <a href="index.html">
@@ -58,7 +62,7 @@
                     <a id="header-shop-button" href="">SHOP</a>
                 </nav>
             </header>
-        </div>
+        </div> -->
 
             <div class="clearfix">
 
@@ -69,8 +73,8 @@
                     <hr class="hero-hr">
 
                     <div class="hero-button-container">
-                        <div class="hero-button">browse collections</div>
-                        <div class="hero-button">place an order</div>
+                        <a class="hero-button" href="pages/designerCollections.html">browse collections</a>
+                        <a class="hero-button">place an order</a>
                     </div>
 
                     <div id="hero-3dots">
@@ -78,6 +82,12 @@
                     </div>
 
                 </section> <!-- .hero -->
+
+                <div id="chevron-hr-home" class="chevron-hr">
+                    <div></div>
+                        <div id="chevron-home" class="chevron"></div>
+                    <div></div>
+                </div>
 
                 <section class="home-content">
 
@@ -107,7 +117,7 @@
                                 </p>
                             </div>
 
-                            <a class="black-button" href="#">browse collections</a>
+                            <a class="black-button" href="pages/designerCollections.html">browse collections</a>
 
                         </div>
 
@@ -130,7 +140,7 @@
                                 </p>
                             </div>
 
-                            <a class="black-button" href="#">some of our favorites</a>
+                            <a class="black-button" href="pages/gallerySeries.html">some of our favorites</a>
 
                         </div>
 
@@ -182,15 +192,9 @@
                 </div>
 
                 <div class="footer-row-3">
-                    <a class="social" href="https://www.instagram.com/roundwoodfurniture/">
-                        <img src="img/instagram_icon.png" alt="">
-                    </a>
-                    <a class="social" href="https://www.facebook.com/Roundwood">
-                        <img src="img/facebook_icon.png" alt="">
-                    </a>
-                    <a class="social" href="https://www.linkedin.com/in/cline-andy-2953945">
-                        <img src="img/linkedin_icon.png" alt="">
-                    </a>
+                    <img src="img/instagram_icon.png" alt="">
+                    <img src="img/facebook_icon.png" alt="">
+                    <img src="img/linkedin_icon.png" alt="">
                 </div>
             </div>
 

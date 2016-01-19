@@ -67,11 +67,21 @@ body {
     ALL: Roundwood Theme
    =================== */
 
+ .aclonica {
+     font-family: "Aclonica";
+     font-size: 42px;
+     margin: 20px 0 20px 0;
+ }
+
  nav a{
      color: white;
      text-decoration: none;
      font-size: 14px;
      font-weight: 300;
+ }
+
+.nav-highlighted {
+     border-bottom: 2px solid white;
  }
 
 .header-container,
@@ -96,6 +106,21 @@ body {
 .black-button:hover {
     color: #fff;
     background-color: #000;
+}
+
+.gray-hr {
+    border-bottom: 2px solid #D4D5D5;
+    margin-top: 0;
+}
+
+.quote {
+    font-size: 16px;
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 300;
+    color: #969798;
+    text-align: center;
+    margin: 40px 0;
 }
 
 /* ==============
@@ -145,6 +170,14 @@ nav li:first-child a {
     margin-top: 10px;
 }
 
+.nav-highlighted {
+     border-bottom: none;
+ }
+
+nav a span {
+    display: inline;
+}
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -191,16 +224,33 @@ nav li:first-child a {
     padding: 10px 20px;
     margin: 10px 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 .hero-button:hover {
     color: #000;
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#chevron-hr-home {
+    margin: -20px 0 0 0;
+}
+
+#chevron-hr-home div {
+    border-color: #5F5C5C;
+}
+
+#chevron-home {
+    background-color: #5F5C5C;
+    z-index: -1;
 }
 
 .home-content {
+    margin: 0 auto;
     padding: 0 10%;
+    max-width: 960px;
 }
 
 .home-quote {
@@ -284,10 +334,6 @@ nav li:first-child a {
     font-size: .9em;
 }
 
-footer .social {
-    padding: 0;
-}
-
 /* ==============
     MOBILE: Designer Collections
    ============== */
@@ -300,6 +346,7 @@ footer .social {
 
 
    #dc h1 {
+       padding-left: 10px;
        margin: 50px 0;
        font-size: 30px;
        line-height: normal;
@@ -308,11 +355,6 @@ footer .social {
    .dc-h1-center {
        display: flex;
        justify-content: center;
-   }
-
-   #dc hr {
-       border-bottom: 2px solid #D4D5D5;
-       margin-top: 0;
    }
 
    .dc-description-col-container{
@@ -334,7 +376,8 @@ footer .social {
    .dc-description-col p {
     font-family: "Asul";
     line-height: 1.4;
-    font-size: 14px;
+    padding: 10px;
+    /*font-size: 14px;*/
     }
 
     .dc-description-col p span {
@@ -380,18 +423,78 @@ footer .social {
     border: 2px solid #D4D5D5;
 }
 
-  .collection-intro-box h3 {
-      font-family: "Asul";
-      font-size: 40px;
-      margin: 20px 0 20px 0;
+  .collection-intro-box h4 {
+      font-family: "Crimson Text";
+      font-size: 54px;
+      font-weight: 400;
+      margin: 23px 0 30px 0;
   }
 
-  .collection-intro-box h4 {
-      font-style: italic;
-      font-size: 38px;
-      font-weight: 400;
-      margin: 20px 0 30px 0;
-  }
+
+/* ==============
+  MOBILE: Gallery Series
+ ============== */
+
+.page-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.page-title-container h1 {
+    margin: 50px 0;
+}
+
+
+#gallery-series p {
+    font-family: "Asul";
+    line-height: 1.4;
+    /*font-size: 14px;*/
+}
+
+.gallery-series-intro {
+    margin: 25px 15% 0 15%;
+}
+
+.fusion-title {
+    text-align: center;
+    padding: 90px 0 0 0;
+}
+
+.quote span:first-child {
+    font-size: 60px;
+    font-family: "Spirax";
+}
+
+.chevron-hr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.chevron-hr div:first-child, .chevron-hr div:last-child {
+    height: 0;
+    width: calc(50% - 28px);
+    /*width: px;*/
+    border-bottom: 2px solid #D4D5D5;
+    display: inline-block;
+}
+
+.chevron {
+	border-style: solid;
+	border-width: 2px 2px 0 0;
+    border-color: #D4D5D5;
+	height: 40px;
+    width: 40px;
+	transform: rotate(135deg);
+    display: inline-block;
+}
+
+.chevron::before {
+    width: 100px
+    height: 0;
+    border-top: 2px solid black;
+}
 
 
 
@@ -436,6 +539,15 @@ footer .social {
       #dc h1 {
           font-size: 36px;
       }
+
+      .page-title-container h1 {
+          font-size: 36px;
+      }
+
+      /* ====================
+          INTERMEDIATE: Gallery Series
+         ==================== */
+
 
 
 
@@ -498,10 +610,16 @@ footer .social {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        margin-left: 50px;
     }
 
     nav a {
         margin: 0;
+        line-height: 1.3em;
+    }
+
+    nav a span {
+        display: block;
     }
 
     nav li:first-child a {
@@ -530,7 +648,7 @@ footer .social {
 
    .home-column-container {
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
    }
 
    .home-column {
@@ -605,7 +723,7 @@ footer .social {
 
        .dc-description-col {
            padding: 0;
-           margin-bottom: 20px;
+           margin-bottom: 0;
        }
 
        .dc-description-col h2 {
@@ -615,7 +733,7 @@ footer .social {
        }
 
       .dc-description-col:first-child p {
-          padding: 0 10px 0 0;
+          padding: 0 20px 0 10px;
       }
 
       .dc-description-col:nth-child(2) p {
@@ -623,7 +741,7 @@ footer .social {
       }
 
       .dc-description-col:last-child p {
-          padding: 0 0 0 15px;
+          padding: 0 10px 0 25px;
       }
 
       .dc-description-col:first-child hr {
@@ -638,6 +756,10 @@ footer .social {
           margin-left: 15px;
       }
 
+      .margin-top-10 {
+          margin-top: 10px;
+      }
+
       #dc .black-button {
           margin-top: 55px;
       }
@@ -645,6 +767,29 @@ footer .social {
       .collection-grid-container {
           margin: 80px auto;
       }
+
+      /* ============
+          WIDE: Gallery Series
+         ============ */
+
+     .page-title-container {
+         display: block;
+     }
+
+     #gallery-series {
+         max-width: 960px;
+         margin: 0 auto;
+     }
+
+     .page-title-container h1 {
+        margin: 50px 0 50px 160px;
+        font-size: 36px;
+        line-height: normal;
+    }
+
+    .gallery-series-intro {
+        margin: 25px 160px 0 160px;
+    }
 
 }
 
