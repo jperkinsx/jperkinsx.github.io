@@ -80,10 +80,6 @@ body {
      font-weight: 300;
  }
 
-.nav-highlighted {
-     border-bottom: 2px solid white;
- }
-
 .header-container,
 .footer-container {
     background: #221F20;
@@ -108,20 +104,54 @@ body {
     background-color: #000;
 }
 
+.black-button-wide {
+    max-width: 200px;
+    padding: 10px 20px;
+}
+
 .gray-hr {
     border-bottom: 2px solid #D4D5D5;
     margin-top: 0;
 }
 
 .quote {
+    max-width: 350px;
     font-size: 16px;
     font-family: "Lato";
     font-style: italic;
     font-weight: 300;
     color: #969798;
     text-align: center;
-    margin: 40px 0;
+    margin: 40px auto;
 }
+
+.quote span:last-child {
+    display: block;
+    margin-top: 10px;
+}
+
+.quote-sm {
+    max-width: 350px;
+    font-size: 16px;
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 300;
+    color: #969798;
+    margin: 20px auto 40px auto;
+    padding: 0 35px;
+}
+
+.quote-sm span {
+    display: block;
+    margin-top: 10px;
+}
+
+.custom-installations-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 30px 0;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -430,6 +460,35 @@ nav a span {
       margin: 23px 0 30px 0;
   }
 
+  /* ==============
+    MOBILE: About
+   ============== */
+
+   .about-cline-box {
+         height: 300px;
+         width: 300px;
+         margin: 10px;
+         padding: 95px 30px 30px 30px;
+         box-sizing: border-box;
+         font-size: 14px;
+         line-height: 1.6em;
+         text-align: center;
+     }
+
+     .about-cline-box h4 {
+         font-family: "Crimson Text";
+         font-size: 54px;
+         font-weight: 400;
+         margin: 23px 0 30px 0;
+     }
+
+     .about-placeholder-wide {
+         margin: 0 0 20px 0;
+     }
+
+     .about-placeholder-med {
+         margin: 0 0 30px 0;
+     }
 
 /* ==============
   MOBILE: Gallery Series
@@ -462,7 +521,8 @@ nav a span {
 
 .quote span:first-child {
     font-size: 60px;
-    font-family: "Spirax";
+    font-family: "Crimson Text";
+    font-weight: 400;
 }
 
 .chevron-hr {
@@ -496,7 +556,13 @@ nav a span {
     border-top: 2px solid black;
 }
 
+/* ==============
+  MOBILE: FAQ
+ ============== */
 
+.faq-body {
+    margin: 25px 15% 0 15%;
+}
 
 
 /* ==========================================================================
@@ -594,6 +660,7 @@ nav a span {
     #header-shop-button {
         border: 2px solid #fff;
         padding: 2px 20px;
+        font-weight: 400;
         /*margin: 20px 0 20px 0;*/
     }
 
@@ -633,6 +700,10 @@ nav a span {
     nav a:hover {
         border-bottom: 2px solid white;
     }
+
+    .nav-highlighted {
+         border-bottom: 2px solid white;
+     }
 
 /* ============
     WIDE: Home
@@ -790,6 +861,31 @@ nav a span {
     .gallery-series-intro {
         margin: 25px 160px 0 160px;
     }
+
+    .about-cline-container {
+        display: flex;
+    }
+
+    /* ==============
+      MOBILE: FAQ
+     ============== */
+
+    .faq-body {
+        margin: 25px 160px 0 160px;
+    }
+
+    .faq-body p {
+        margin-left: 30px;
+    }
+
+    /* ==============
+      MOBILE: TRADE SALES
+     ============== */
+
+    .trade-sales-spacer {
+        height: 600px;
+    }
+
 
 }
 
