@@ -67,11 +67,39 @@ body {
     ALL: Roundwood Theme
    =================== */
 
+ .image-overlay {
+     color: transparent;
+     height: 300px;
+     width: 300px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.7;
+     cursor: pointer;
+ }
+
+ .image-overlay:hover {
+     color: white;
+     background-color: black;
+ }
+
+ #gallery-series .image-overlay p {
+     font-size: 20px;
+     text-align: center;
+     margin: 40% 0 0 0;
+     font-family: "Lato";
+ }
+
+ .circle {
+     border-radius: 50%;
+ }
+
  .aclonica {
      font-family: "Aclonica";
      font-size: 42px;
      margin: 20px 0 20px 0;
  }
+
 
  nav a{
      color: white;
@@ -443,6 +471,12 @@ nav a span {
       height: 300px;
       width: 300px;
       margin: 10px;
+      position: relative;
+  }
+
+  .collection-item img {
+      height: 100%;
+      width: 100%;
   }
 
 .collection-intro-box {
