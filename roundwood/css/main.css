@@ -83,7 +83,7 @@ body {
      background-color: black;
  }
 
- #gallery-series .image-overlay p {
+ .image-overlay p {
      font-size: 20px;
      text-align: center;
      margin: 40% 0 0 0;
@@ -538,7 +538,7 @@ nav a span {
 }
 
 
-#gallery-series p {
+.gallery-series-intro p {
     font-family: "Asul";
     line-height: 1.4;
     /*font-size: 14px;*/
