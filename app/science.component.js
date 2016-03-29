@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './github.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,30 +10,34 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var CoursesComponent;
+    var core_1, github_service_1;
+    var ScienceComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (github_service_1_1) {
+                github_service_1 = github_service_1_1;
             }],
         execute: function() {
-            CoursesComponent = (function () {
-                function CoursesComponent() {
-                    this.title = 'The title of the courses page';
-                    this.courses = ['Course1', 'Course2', 'Course3', 'slayer'];
+            ScienceComponent = (function () {
+                function ScienceComponent(githubService) {
+                    this.title = "Welcome to NYC Data Science";
+                    this.welcome = githubService.authorize();
                 }
-                CoursesComponent = __decorate([
+                ScienceComponent = __decorate([
                     core_1.Component({
-                        selector: 'courses',
-                        templateUrl: 'app/courses.html'
+                        selector: 'science',
+                        templateUrl: 'app/welcome.html',
+                        providers: [github_service_1.GithubService]
                     }), 
-                    __metadata('design:paramtypes', [])
-                ], CoursesComponent);
-                return CoursesComponent;
+                    __metadata('design:paramtypes', [github_service_1.GithubService])
+                ], ScienceComponent);
+                return ScienceComponent;
             }());
-            exports_1("CoursesComponent", CoursesComponent);
+            exports_1("ScienceComponent", ScienceComponent);
         }
     }
 });
-//# sourceMappingURL=courses.component.js.map
+//# sourceMappingURL=science.component.js.map
